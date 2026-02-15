@@ -59,12 +59,15 @@ export function AnimatedProgressRing({ score, size = 80, strokeWidth = 6, color,
 }
 
 // ── Glow Card ──
-export function GlowCard({ children, style, glowColor = 'rgba(59,130,246,0.15)' }: {
-    children: ReactNode; style?: React.CSSProperties; glowColor?: string;
+// ── Glow Card ──
+export function GlowCard({ children, style, glowColor = 'rgba(59,130,246,0.15)', onClick, className }: {
+    children: ReactNode; style?: React.CSSProperties; glowColor?: string; onClick?: () => void; className?: string;
 }) {
     return (
         <motion.div
             {...cardHover}
+            onClick={onClick}
+            className={className}
             style={{
                 background: 'rgba(255,255,255,0.03)',
                 border: '1px solid rgba(255,255,255,0.08)',
@@ -72,6 +75,7 @@ export function GlowCard({ children, style, glowColor = 'rgba(59,130,246,0.15)' 
                 padding: 24,
                 backdropFilter: 'blur(20px)',
                 transition: 'box-shadow 0.3s ease',
+                cursor: onClick ? 'pointer' : 'default',
                 ...style,
             }}
             whileHover={{
