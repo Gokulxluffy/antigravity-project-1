@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Base Colors - Deep Blue/Black Theme */
+    --bg-primary: #020617; /* Very deep blue/black */
+    --bg-secondary: #0f172a; /* Slate 900 */
+    --bg-card: rgba(15, 23, 42, 0.6);
+    --bg-card-hover: rgba(30, 41, 59, 0.7);
+    
+    /* Borders & Lines */
+    --border: rgba(148, 163, 184, 0.1);
+    --border-highlight: rgba(212, 175, 55, 0.3); /* Gold hint */
+
+    /* Typography */
+    --text-primary: #f8fafc; /* Slate 50 */
+    --text-secondary: #94a3b8; /* Slate 400 */
+    --text-muted: #64748b; /* Slate 500 */
+    
+    /* Accents - Institutional Fintech */
+    --accent-gold: #d4af37; /* Classic Gold */
+    --accent-gold-dim: rgba(212, 175, 55, 0.1);
+    --accent-teal: #14b8a6; /* Teal 500 */
+    --accent-blue: #3b82f6; /* Blue 500 */
+    --accent-red: #ef4444; /* Red 500 */
+    
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, #d4af37 0%, #fcd34d 100%);
+    --gradient-blue: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    --gradient-dark: linear-gradient(to bottom, #020617, #0f172a);
+  }
+
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+  }
+  
+  .glass-panel-hover:hover {
+    background: rgba(30, 41, 59, 0.8);
+    border-color: var(--border-highlight);
+  }
+  
+  .text-gold {
+    color: var(--accent-gold);
+  }
+  
+  .bg-gold-gradient {
+    background: var(--gradient-gold);
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
