@@ -6,8 +6,8 @@ import { generateRecommendations } from '@/lib/recommendationEngine';
 import { calculatePortfolioVolatility } from '@/lib/portfolioEngine';
 import { formatCurrency, formatNumber } from '@/lib/utils';
 import { AreaChart, Area, ResponsiveContainer, Tooltip, XAxis, YAxis, CartesianGrid, BarChart, Bar, Cell } from 'recharts';
-import { ShieldAlert, AlertTriangle, TrendingDown, Activity, Zap, Info, Thermometer, Anchor } from 'lucide-react';
-import { AnimatedCounter, AnimatedBar, GlowCard, HUDMetricCard, PulseIndicator } from '@/components/AnimatedComponents';
+import { ShieldAlert, AlertTriangle, TrendingDown, Activity, Zap, Thermometer, Anchor } from 'lucide-react';
+import { AnimatedCounter, GlowCard, HUDMetricCard, PulseIndicator, AnimatedBar } from '@/components/AnimatedComponents';
 import { ComplianceBar } from '@/components/ComplianceBar';
 
 export default function RiskPage() {

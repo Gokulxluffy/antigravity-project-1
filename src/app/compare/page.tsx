@@ -6,9 +6,8 @@ import Link from 'next/link';
 import { allStocks } from '@/lib/stockData';
 import { scoreStock } from '@/lib/scoringEngine';
 import { formatNumber, formatCurrency } from '@/lib/utils';
-import { Search, Plus, X, BarChart3, TrendingUp, CheckCircle2, Trophy } from 'lucide-react';
-import { AreaChart, Area, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, RadarChart, PolarGrid, PolarAngleAxis, Radar, Legend } from 'recharts';
-import { GlowCard, AnimatedBar } from '@/components/AnimatedComponents';
+import { Search, Plus, X, TrendingUp, Trophy } from 'lucide-react';
+import { AreaChart, Area, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { ComplianceBar } from '@/components/ComplianceBar';
 
 const COLORS = ['#6366f1', '#34d399', '#f59e0b', '#ef4444'];

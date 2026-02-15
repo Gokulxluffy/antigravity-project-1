@@ -1,7 +1,7 @@
 "use client";
 
 import { Sidebar } from "@/components/layout/Sidebar";
-import { MetricCard, AIGauge, AIConfidenceMeter } from "@/components/dashboard/DashboardWidgets";
+import { MetricCard, AIGauge } from "@/components/dashboard/DashboardWidgets";
 import { PriceHistoryChart, PortfolioAllocationChart } from "@/components/dashboard/Charts";
 import { TrendingUp, Activity, ShieldCheck, Zap } from "lucide-react";
 import { MOCK_COMPANIES } from "@/lib/data/mockData";
