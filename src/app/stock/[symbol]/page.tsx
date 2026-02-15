@@ -8,7 +8,7 @@ import { makeDecision } from '@/lib/decisionEngine';
 import { generateExplanation } from '@/lib/explainableAI';
 import { formatNumber, formatCurrency } from '@/lib/utils';
 import { AreaChart, Area, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
-import { TrendingUp, TrendingDown, ArrowUpRight, Building, BarChart3, PieChart, Users, ChevronLeft, Brain, FileText, Newspaper, AlertTriangle, CheckCircle2 } from 'lucide-react';
+import { TrendingUp, TrendingDown, ArrowUpRight, BarChart3, ChevronLeft, Brain, FileText, AlertTriangle, CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
 import { ScoreRadar } from '@/components/VisualAnalytics';
 import { VerdictBadge, AnimatedCounter, AnimatedBar, GlowCard, HUDMetricCard } from '@/components/AnimatedComponents';
