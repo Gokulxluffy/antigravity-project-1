@@ -7,8 +7,8 @@ import Link from 'next/link';
 import { generateRecommendations } from '@/lib/recommendationEngine';
 import { formatCurrency, formatNumber } from '@/lib/utils';
 import { RiskLevel, TimePeriod } from '@/lib/types';
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, BarChart, Bar, XAxis, YAxis } from 'recharts';
-import { TrendingUp, Shield, Target, ArrowUpRight, ChevronRight, Star, Zap, Filter, ChevronDown, CheckCircle2, AlertTriangle } from 'lucide-react';
+import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
+import { TrendingUp, Shield, Target, Star, Zap, Filter, ChevronDown, CheckCircle2, AlertTriangle } from 'lucide-react';
 import { GlowCard, AnimatedCounter, StaggerList, StaggerItem, HUDMetricCard } from '@/components/AnimatedComponents';
 import { ComplianceBar } from '@/components/ComplianceBar';
 

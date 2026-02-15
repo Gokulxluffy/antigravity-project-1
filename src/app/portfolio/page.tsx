@@ -2,7 +2,7 @@
 
 import { Sidebar } from "@/components/layout/Sidebar";
 import { PortfolioAllocationChart } from "@/components/dashboard/Charts";
-import { SelectionCard } from "@/components/ui/InputComponents";
+
 import { MOCK_COMPANIES } from "@/lib/data/mockData";
 
 export default function PortfolioPage() {
